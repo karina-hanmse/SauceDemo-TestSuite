@@ -1,0 +1,75 @@
+===============================================
+SAUCEDEMO - ANÁLISIS DE NETWORK REQUESTS
+===============================================
+Caso de Prueba: TC002 - Intento de Login Usuario Bloqueado
+Fecha: 28/08/2025
+URL: https://www.saucedemo.com
+Usuario: locked_out_user
+Navegador: Chrome DevTools - Pestaña Red
+===============================================
+
+CONFIGURACIÓN DE CAPTURA:
+✓ Mantener registro: Habilitado
+✓ Inhabilitar caché: Habilitado  
+✓ Filtros: Todos los tipos activos
+✓ Vista general: Habilitada
+
+===============================================
+RESULTADOS DE NETWORK MONITORING:
+===============================================
+
+📊 ESTADÍSTICAS GENERALES:
+- Solicitudes HTTP capturadas: 0/2
+- Datos transferidos: 0.0 kB/0.0 kB
+- Recursos cargados: 0.0 kB
+
+🔍 REQUESTS ESPECÍFICOS DE AUTENTICACIÓN:
+- No se detectaron requests HTTP de login tradicionales
+- No se observaron llamadas a endpoints /login o /auth
+- No se registraron requests POST de autenticación
+
+⚠️ OBSERVACIONES TÉCNICAS:
+- SauceDemo parece usar autenticación del lado cliente (frontend)
+- Validación de credenciales posiblemente implementada en JavaScript
+- No hay comunicación con servidor para proceso de login
+- Arquitectura de Single Page Application (SPA)
+
+🔴 ERRORES DE RED DETECTADOS:
+- Multiple intentos fallidos a Backtrace.io (servicio de logging externo)
+- Error 503: Service Unavailable en requests de logging
+- Política CORS bloqueando requests externos
+- Errores originados desde Login.jsx durante proceso de envío
+
+===============================================
+IMPLICACIONES PARA TESTING:
+===============================================
+
+✅ VALIDACIONES CONFIRMADAS:
+- Sistema detecta usuario bloqueado sin requests de servidor
+- Lógica de autenticación implementada localmente
+- Manejo de errores funcional (logging activo)
+- No hay exposición de datos sensibles en network traffic
+
+📝 CONSIDERACIONES DE SEGURIDAD:
+- Autenticación frontend-only es menos segura que server-side
+- No se observan headers de seguridad en requests
+- Validación de usuarios parece estar hardcodeada en cliente
+- Recomendable validar comportamiento en entorno de producción real
+
+===============================================
+CONCLUSIONES PARA TC002:
+===============================================
+
+🎯 COMPORTAMIENTO OBSERVADO:
+- Usuario bloqueado correctamente rechazado a nivel de aplicación
+- No se generaron requests maliciosos o inesperados
+- Sistema de logging de errores funcionando (aunque con fallos de conectividad)
+- Aplicación mantuvo estado seguro durante test de usuario bloqueado
+
+📈 VALOR DE LA EVIDENCIA:
+- Confirma que no hay bypass de autenticación via network
+- Demuestra arquitectura de la aplicación (SPA)
+- Valida que el bloqueo es efectivo sin comunicación servidor
+- Evidencia técnica de comportamiento esperado según REQ-AUTH-002
+
+===============================================
