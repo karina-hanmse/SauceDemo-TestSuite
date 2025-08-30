@@ -1,79 +1,117 @@
 # 🧪 Suite de Pruebas SauceDemo
-
-> Portafolio completo de pruebas que muestra la evolución de las habilidades de QA desde un nivel básico hasta uno competente.
+> **🚧 Portfolio en Desarrollo Activo** | Portafolio completo de pruebas que muestra la evolución de las habilidades de QA desde un nivel básico hasta uno competente.
 
 ## 🎯 Resumen del Proyecto
-
-Este repositorio muestra mi trayectoria en pruebas y mi crecimiento profesional a través de la documentación de casos de prueba mejorada para [SauceDemo](https://www.saucedemo.com/).
+Este repositorio documenta mi trayectoria en QA Testing y crecimiento profesional a través de casos de prueba mejorados para [SauceDemo](https://www.saucedemo.com/). Cada semana incorporo nuevas técnicas, herramientas y metodologías que reflejan mi evolución continua en Quality Assurance.
 
 ### 📈 Trayectoria Evolutiva
-- **Semana 1:** Pruebas funcionales básicas (Nivel júnior)
-- **Semana 2:** Detalles técnicos y concientización sobre seguridad
+- **Semana 1:** Pruebas funcionales básicas y estructura inicial
+- **Semana 2:** **ACTUAL** → Análisis técnico profundo (console logs, network requests)
 - **Semana 3:** Pruebas basadas en métricas con evidencia completa
 - **Semana 4:** Pensamiento estratégico y propuestas de automatización
 
-### 🧩 Módulos de Prueba
-- **🔐 Autenticación** (5 casos de prueba) - Inicio de sesión, cierre de sesión, validación de usuario
-- **🧭 Navegación** (Planificada) - Menú, rutas de navegación, enrutamiento de páginas
-- **📦 Inventario** (Planificado) - Listado de productos, filtrado, ordenación
-- **🛒 Carrito de Compras** (Planificado) - Añadir/Eliminar artículos, cálculos
-- **💳 Finalización de Compras** (Planificado) - Flujo de pago, validación de formulario
+## 📊 Estado Actual del Portfolio
 
-## 📊 Estado Actual
-- **Total de Casos de Prueba:** 5 (Aumenta semanalmente)
-- **Ejecución Calificación:** 100%
-- **Defectos encontrados:** 1 (BUG-001)
-- **Documentación:** Nivel profesional
+### ✅ **Completado**
+- **🔐 Módulo de Autenticación** (2/5 casos implementados)
+  - TC002: Usuario Bloqueado - **Con análisis técnico completo**
+  - Documentación profesional con evidencias exhaustivas
+  - Análisis de console logs y network requests
+- **Estructura Organizacional** - Carpetas profesionales y trazabilidad completa
+- **Metodología Establecida** - Proceso sistemático documentado
 
-## 🚀 Navegación rápida
+### 🔄 **En Progreso**
+- **🔐 Autenticación** - Completando casos restantes (3/5)
+- **🧭 Navegación** - Menú, rutas de navegación, enrutamiento de páginas
+- **📦 Inventario** - Listado de productos, filtrado, ordenación
 
-### 📋 Casos de prueba
-- [Módulo de autenticación](/test-cases/01-authentication/) - Pruebas de inicio de sesión y validación de usuario
+### 📋 **Próximos Módulos**
+- **🛒 Carrito de Compras** - Añadir/Eliminar artículos, cálculos
+- **💳 Finalización de Compras** - Flujo de pago, validación de formulario
+- **🤖 Automatización** - Introducción a Selenium WebDriver
 
-### 🐛 Informes de errores
-- [BUG-001: Problema de validación de inicio de sesión](/evidence/bug-reports/) - Se necesita mejorar la experiencia de usuario
+## 🗂️ Estructura del Portfolio
 
-### 📈 Informes
-- [Resumen semanal de ejecución](/reports/) - Métricas y cobertura de las pruebas
+```
+├── test-cases/           # Casos de prueba documentados
+│   └── 01-authentication/    # Módulo de login y usuarios
+├── evidence/            # Evidencias de ejecución
+│   ├── screenshots/     # Capturas de pantalla paso a paso
+│   ├── videos/         # Videos de ejecución completa
+│   └── docs/           # Análisis técnicos detallados
+├── test-plans/         # Planes de prueba (próximamente)
+├── bug-reports/        # Informes de defectos
+└── reports/           # Métricas y resúmenes ejecutivos
+```
 
-## 🛠️ Herramientas y habilidades demostradas
+## 🚀 Navegación Rápida
 
-### Pruebas manuales
-- ✅ Diseño y ejecución de casos de prueba
-- ✅ Informe y seguimiento de errores
-- ✅ Recopilación y documentación de evidencias
-- ✅ Técnicas de pruebas entre navegadores
+### 📋 **Casos de Prueba Destacados**
+- [**TC002 - Usuario Bloqueado**](./test-cases/01-authentication/TC002-LOGIN-Usuario_Bloqueado.md) 
+  - ⭐ **Caso estrella** con análisis técnico completo
+  - Console logs capturados y analizados
+  - Network requests documentados
+  - Validación de requisitos de seguridad (REQ-AUTH-002)
 
-### Habilidades técnicas
-- ✅ Control de versiones de Git y flujos de trabajo de GitHub
-- ✅ Documentación de Markdown
-- ✅ Herramientas de desarrollo de navegadores para depuración
-- ✅ Captura de pantalla y video
+### 🐛 **Informes de Defectos**
+- [BUG-001: Problema de validación de inicio de sesión](./evidence/bug-reports/) 
+- Análisis de impacto y severidad incluidos
 
-### Proceso y metodología
-- ✅ Planificación y estrategia de pruebas
-- ✅ Trazabilidad de requisitos
+### 📈 **Métricas Actuales**
+- **Casos de Prueba Ejecutados:** 2/5 del módulo autenticación
+- **Tasa de Éxito:** 100% de ejecución documentada
+- **Defectos Encontrados:** 1 (BUG-001)
+- **Cobertura de Evidencias:** Completa (screenshots + videos + logs técnicos)
+
+## 🛠️ Herramientas y Habilidades Demostradas
+
+### **Testing Manual Avanzado**
+- ✅ Diseño y ejecución sistemática de casos de prueba
+- ✅ **Análisis técnico profundo** (Console logs, Network monitoring)
+- ✅ Documentación exhaustiva con evidencias múltiples
+- ✅ Trazabilidad completa requisitos → casos → evidencias
+- ✅ Testing cross-browser y debugging
+
+### **Habilidades Técnicas**
+- ✅ **Chrome DevTools** - Console, Network, debugging
+- ✅ **Control de versiones** Git y flujos de trabajo GitHub
+- ✅ **Documentación técnica** Markdown profesional
+- ✅ **Captura de evidencias** Screenshots, videos, HAR files
+- ✅ **Análisis de logs** Interpretación de errores y warnings
+
+### **Proceso y Metodología**
+- ✅ Planificación estratégica de pruebas
+- ✅ **Metodología estructurada** y escalable
 - ✅ Seguimiento de métricas y KPI
-- ✅ Mentalidad de mejora continua
+- ✅ **Mejora continua** documentada semanalmente
 
-## 🎓 Trayectoria de aprendizaje
+## 🎓 Evolución del Aprendizaje
 
-Este portafolio demuestra un crecimiento auténtico:
-- **TC001:** Se inició con la ejecución básica de pruebas
-- **TC002:** Se añadió análisis de seguridad y detalles técnicos
-- **TC003+:** Se incorporaron métricas, preparación para la automatización y mejoras de procesos
+Este portfolio demuestra **crecimiento auténtico y medible**:
 
-Cada commit cuenta la historia del desarrollo profesional y el aprendizaje a partir de la experiencia.
+- **TC001:** Comenzé con ejecución básica de pruebas
+- **TC002:** **ACTUAL** → Incorporé análisis técnico profundo (console logs, network analysis)
+- **TC003+:** Próximamente → Métricas avanzadas y preparación para automatización
+
+> 💡 **Cada commit cuenta la historia** del desarrollo profesional y aprendizaje basado en experiencia real.
+
+## 🔄 Cronograma de Actualizaciones
+- **📅 Frecuencia:** Actualizaciones semanales (Lunes)
+- **🎯 Próxima entrega:** Completar módulo de autenticación (5/5 casos)
+- **📈 Roadmap:** Transición gradual hacia automatización en Semana 4
 
 ## 📞 Contacto y Colaboración
 
-**Karina Hanmse** - Aspirante a Profesional de Control de Calidad
-📧 [karinahanmse@gmail.com]
-💼 [Perfil de LinkedIn]
-🌐 Córdoba, Argentina
+**Karina Hanmse** - QA Tester en Formación  
+🔍 Especializada en testing manual, documentación técnica y análisis detallado
+
+- 📧 karinahanmse@gmail.com  
+- 💼 [www.linkedin.com/in/karinahanmse]  
+- 🌐 Córdoba, Argentina  
 
 ---
-⭐ **¡Marca este repositorio con una estrella si te resulta útil para aprender las mejores prácticas de testing!**
 
-📅 **Última actualización:** 28 de agosto de 2025
-🔄 **Próxima actualización:** Semanal (domingos)
+⭐ **¡Marca este repositorio con una estrella si te resulta útil para aprender las mejores prácticas de QA Testing!**
+
+📅 **Última actualización:** 30 de agosto de 2025  
+🔄 **Próxima actualización:** 1 de septiembre de 2025
