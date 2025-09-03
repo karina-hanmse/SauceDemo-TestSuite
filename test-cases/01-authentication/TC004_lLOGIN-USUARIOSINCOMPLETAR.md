@@ -71,7 +71,16 @@ Verificar que el sistema no permita ingresar cuando el campo username está vac�
 - **Tiempo de ejecución:** [2.1 segundos]
 
 ## 📝 Observaciones
-[Completar después de la ejecución]
+ - Login no fue ejecutado.
+ - Mensaje error luego de clickear Login.
+ - No se observaron errores en consola del navegador.
+ - Funcionalidad opera según lo esperado.
+
+ ## 🔍 Evidencia de Prueba
+- **Screenshot inicial:** `evidence/TC002_step1_login_page_28082025.png`
+- **Screenshot credenciales:** `evidence/TC004_step1_credencialusuariovacia_03092025.png`
+- **Screenshot error:** `evidence/TC004_step2_error_message_03092025.png`
+- **Video ejecución completa:** `evidence/videos/TC004_credencialusuario.mp4`
 
 ## 🔗 Trazabilidad y Referencias
 - **Requisito funcional:** REQ-AUTH-003 (Validación de campos obligatorios)
