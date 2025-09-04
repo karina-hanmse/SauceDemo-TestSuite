@@ -146,9 +146,9 @@ Verificar que el sistema bloquea correctamente el acceso de usuarios que han sid
 - Mensaje específico ayuda a distinguir entre usuario bloqueado vs credenciales incorrectas
 
 ## 🔍 Evidencia de Prueba
-- **Screenshot inicial:** `evidence/TC002_step1_login_page_28082025.png`
-- **Screenshot credenciales:** `evidence/TC002_step3_blocked_user_entered_28082025.png`
-- **Screenshot error:** `evidence/TC002_step6_error_message_28082025.png`
+- **Screenshot inicial:** `evidence/screenshots/TC002_step1_login_page_28082025.png`
+- **Screenshot credenciales:** `evidence/screenshots/TC002_step3_blocked_user_entered_28082025.png`
+- **Screenshot error:** `evidence/Tsreenshots/C002_step6_error_message_28082025.png`
 - **Video ejecución completa:** `evidence/videos/TC002_blocked_user_test_28082025.mp4`
 - **Console logs:** `evidence/docs/TC002_browser_console_28082025.txt`
 - **Network requests:** `evidence/TC002_network_requests_28082025.har`

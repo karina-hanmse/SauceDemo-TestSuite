@@ -1,15 +1,15 @@
-# TC004-LOGIN - Login con usuario vacío y password correcta
+# TC005-LOGIN - Login con username válido y password vacía
 
 ## 📋 Información General
-- **ID:** TC004-LOGIN
+- **ID:** TC005-LOGIN
 - **Módulo:** Autenticación
 - **Prioridad:** Alta
 - **Tipo:** Funcional - Negativo
 - **Autor:** [Karina Hanmse]
-- **Fecha:** 01/09/2025
+- **Fecha:** 02/09/2025
 
 ## 🎯 Objetivo
-Verificar que el sistema no permita ingresar cuando el campo username está vacío, aún teniendo una password válida.
+Verificar que el sistema no permita ingresar cuando el campo password está vacío, aún teniendo un username válido.
 
 ## 📚 Precondiciones
 - [ ] Navegador Chrome 118+ instalado
@@ -20,8 +20,8 @@ Verificar que el sistema no permita ingresar cuando el campo username está vac�
 ## 🧪 Datos de Prueba
 | Campo       | Valor         | Notas |
 |-------      |-------        |-------|
-| Username    | Sin completar | Campo vacío  |
-| Password    | secret_sauce  | Password válida del sistema |
+| Username    | standard_user | Username válido del sistema  |
+| Password    | Sin completar | Campo vacío |
 | Environment | Production    | https://www.saucedemo.com |
 
 ## 🔄 Pasos de Ejecución
@@ -36,51 +36,42 @@ Verificar que el sistema no permita ingresar cuando el campo username está vac�
 
 ### Paso 3: Ingreso de credenciales
 **Acción:** 
-- Dejar vacío campo Username
-- Ingresar "secret_sauce" en campo Password
-**Resultado Esperado:** Solo el campo Password contiene datos, Username permanece vacío
+- Ingresar "standard_user" en campo Username
+- Dejar vacío campo Password
+**Resultado Esperado:** Solo el campo Username contiene datos, Password permanece vacío
 
 ### Paso 4: Intento de Autenticación 
 **Acción:** Hacer clic en botón "LOGIN"
 **Resultado Esperado:** 
 - Sistema no procesa la autenticación
-- Sistema muestra mensaje de error: "Epic sadface: Username is required"
+- Sistema muestra mensaje de error: "Epic sadface: Password is required"
 - Usuario permanece en página de login
-- Campo Password mantiene el valor ingresado
+- Campo Username mantiene el valor ingresado
 
 ## ✅ Criterios de Aceptación
 - [ ] Sistema muestra mensaje de error apropiado
 - [ ] No permite acceso al sistema
 - [ ] Mensaje aparece en menos de 3 segundos
-- [ ] Password ingresada se mantiene visible/oculta según configuración
+- [ ] Username ingresado se mantiene visible tras el error
 
 ## 🐛 Posibles Defectos a Observar
-- Sistema permite envío del formulario sin validar campo username obligatorio
+- Sistema permite envío del formulario sin validar campo password obligatorio
 - Mensaje de error no aparece o es incorrecto
 - Sistema muestra mensaje genérico en lugar del específico esperado
-- Campo password se limpia incorrectamente tras el error
+- Campo username se limpia incorrectamente tras el error
 - Tiempos de respuesta excesivos (más de 3 segundos)
-- Sistema permite acceso indebido con username vacío
+- Sistema permite acceso indebido con password vacía
 
 ## 📊 Resultado de Ejecución
 - **Ejecutado por:** [Karina Hanmse]
-- **Fecha:** [03/09/2025]
+- **Fecha:** [02/09/2025]
 - **Navegador:** Chrome 118.0.5993.88
 - **SO:** Windows 11 Home
 - **Estado:** ⏳ Pendiente
-- **Tiempo de ejecución:** [2.1 segundos]
+- **Tiempo de ejecución:** [X segundos]
 
 ## 📝 Observaciones
- - Login no fue ejecutado.
- - Mensaje error luego de clickear Login.
- - No se observaron errores en consola del navegador.
- - Funcionalidad opera según lo esperado.
-
- ## 🔍 Evidencia de Prueba
-- **Screenshot inicial:** `evidence/TC002_step1_login_page_28082025.png`
-- **Screenshot credenciales:** `evidence/TC004_step1_credencialusuariovacia_03092025.png`
-- **Screenshot error:** `evidence/TC004_step2_error_message_03092025.png`
-- **Video ejecución completa:** `evidence/videos/TC004_credencialusuario.mp4`
+[Completar después de la ejecución]
 
 ## 🔗 Trazabilidad y Referencias
 - **Requisito funcional:** REQ-AUTH-003 (Validación de campos obligatorios)
@@ -89,7 +80,7 @@ Verificar que el sistema no permita ingresar cuando el campo username está vac�
 - **Casos relacionados:** 
   - TC001-LOGIN (Login exitoso con credenciales válidas)
   - TC003-LOGIN (Login con ambos campos vacíos)
-  - TC005-LOGIN (Login con password vacía y username válido)
+  - TC004-LOGIN (Login con username vacío y password válida)
   - TC006-LOGIN (Login con credenciales incorrectas)
 - **Documentación técnica:** [Políticas de autenticación SauceDemo v1.0]
 - **Ambiente de prueba:** https://www.saucedemo.com
@@ -97,23 +88,23 @@ Verificar que el sistema no permita ingresar cuando el campo username está vac�
 ## 📈 Métricas y KPIs
 | Métrica               | Valor Objetivo  | Valor Obtenido  | Estado    |
 |---------              |---------------  |---------------- |--------   |
-| Tiempo de validación  | < 3 segundos    | [2.1 segundos]    | ✅ Pass   |
-| Acceso bloqueado      | 100%            | [100%]            | ✅ Pass   |
-| Mensaje específico    | Sí              | [Sí]              | ✅ Pass   |
-| Permanencia en login  | Sí              | [Sí]              | ✅ Pass   |
+| Tiempo de validación  | < 3 segundos    | [X segundos]    | ⏳ Pendiente   |
+| Acceso bloqueado      | 100%            | [X%]            | ⏳ Pendiente   |
+| Mensaje específico    | Sí              | [Sí/No]         | ⏳ Pendiente   |
+| Permanencia en login  | Sí              | [Sí/No]         | ⏳ Pendiente   |
 
 ## 🛡️ Validaciones de Seguridad
-- ✅ No hay bypass de validación de campo username obligatorio
-- ✅ Mensaje de error apropiado y específico mostrado
-- ✅ No hay acceso indebido al sistema con username faltante
-- ✅ Comportamiento consistente independiente del browser
-- ✅ Password ingresada no se procesa sin username válido
+- ⏳ No hay bypass de validación de campo password obligatorio
+- ⏳ Mensaje de error apropiado y específico mostrado
+- ⏳ No hay acceso indebido al sistema con password faltante
+- ⏳ Comportamiento consistente independiente del browser
+- ⏳ Username ingresado no se procesa sin password válida
 
 ## 📋 Historial de Cambios
 | Versión | Fecha | Cambio Realizado | Responsable |
 |---------|--------|------------------|-------------|
-| 1.0 | 01/09/2025 | Creación inicial del caso | Karina Hanmse |
+| 1.0 | 02/09/2025 | Creación inicial del caso | Karina Hanmse |
 
 ---
-**Última actualización:** 03/09/2025
+**Última actualización:** 02/09/2025
 **Revisado por:** [Karina Hanmse]
