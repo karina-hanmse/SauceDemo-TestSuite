@@ -75,10 +75,10 @@ Verificar que el sistema no permita ingresar con datos incompletos.
  - Funcionalidad opera según lo esperado.
 
  ## 🔍 Evidencia de Prueba
-- **Screenshot inicial:** `evidence/TC002_step1_login_page_28082025.png`
-- **Screenshot credenciales:** `evidence/TC003_step3_credencialesvacias_01092025.png`
-- **Screenshot error:** `evidence/TC003_step7_error_message_01092025.png`
-- **Video ejecución completa:** `evidence/videos/TC003_credencialesvacias.mp4`
+- **Screenshot inicial:** `evidence/screenshots/TC002_step1_login_page_28082025.png`
+- **Screenshot credenciales:** `evidence/screenshots/TC003_step3_credencialesvacias_01092025.png`
+- **Screenshot error:** `evidence/screenshots/TC003_step7_error_message_01092025.png`
+- **Video ejecución completa:** `evidence/videos/TC003_credencialesvacias.wmv`
 
 ## 🔗 Trazabilidad y Referencias
 - **Requisito funcional:** REQ-AUTH-003 (Validación de campos obligatorios)

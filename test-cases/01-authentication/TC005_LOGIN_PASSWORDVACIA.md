@@ -6,7 +6,7 @@
 - **Prioridad:** Alta
 - **Tipo:** Funcional - Negativo
 - **Autor:** [Karina Hanmse]
-- **Fecha:** 02/09/2025
+- **Fecha:** 03/09/2025
 
 ## 🎯 Objetivo
 Verificar que el sistema no permita ingresar cuando el campo password está vacío, aún teniendo un username válido.
@@ -67,11 +67,20 @@ Verificar que el sistema no permita ingresar cuando el campo password está vac�
 - **Fecha:** [02/09/2025]
 - **Navegador:** Chrome 118.0.5993.88
 - **SO:** Windows 11 Home
-- **Estado:** ⏳ Pendiente
-- **Tiempo de ejecución:** [X segundos]
+- **Estado:** ✅ PASS 
+- **Tiempo de ejecución:** [2.1 segundos]
 
 ## 📝 Observaciones
-[Completar después de la ejecución]
+ - Login no fue ejecutado.
+ - Mensaje error luego de clickear Login.
+ - No se observaron errores en consola del navegador.
+ - Funcionalidad opera según lo esperado.
+
+## 🔍 Evidencia de Prueba
+- **Screenshot inicial:** `evidence/screenshots/TC002_step1_login_page_28082025.png`
+- **Screenshot credenciales:** `evidence/screenshots/TC005_step1_credencialpasswordvacia_04092025.png`
+- **Screenshot error:** `evidence/screenshots/TC005_step2_error_message_04092025.png`
+- **Video ejecución completa:** `evidence/videos/TC005_credencialpasswordvacia.wmv`
 
 ## 🔗 Trazabilidad y Referencias
 - **Requisito funcional:** REQ-AUTH-003 (Validación de campos obligatorios)
@@ -88,23 +97,25 @@ Verificar que el sistema no permita ingresar cuando el campo password está vac�
 ## 📈 Métricas y KPIs
 | Métrica               | Valor Objetivo  | Valor Obtenido  | Estado    |
 |---------              |---------------  |---------------- |--------   |
-| Tiempo de validación  | < 3 segundos    | [X segundos]    | ⏳ Pendiente   |
-| Acceso bloqueado      | 100%            | [X%]            | ⏳ Pendiente   |
-| Mensaje específico    | Sí              | [Sí/No]         | ⏳ Pendiente   |
-| Permanencia en login  | Sí              | [Sí/No]         | ⏳ Pendiente   |
+| Tiempo de validación  | < 3 segundos    | [2.1 segundos]  | ✅ Pass   |
+| Acceso bloqueado      | 100%            | 100%            | ✅ Pass   |
+| Mensaje específico    | Sí              | Sí              | ✅ Pass   |
+| Permanencia en login  | Sí              | Sí/No           | ✅ Pass   |
 
 ## 🛡️ Validaciones de Seguridad
-- ⏳ No hay bypass de validación de campo password obligatorio
-- ⏳ Mensaje de error apropiado y específico mostrado
-- ⏳ No hay acceso indebido al sistema con password faltante
-- ⏳ Comportamiento consistente independiente del browser
-- ⏳ Username ingresado no se procesa sin password válida
+- ✅ No hay bypass de validación de campo password obligatorio
+- ✅ Mensaje de error apropiado y específico mostrado
+- ✅ No hay acceso indebido al sistema con password faltante
+- ✅ Comportamiento consistente independiente del browser
+- ✅ Username ingresado no se procesa sin password válida
 
 ## 📋 Historial de Cambios
 | Versión | Fecha | Cambio Realizado | Responsable |
 |---------|--------|------------------|-------------|
 | 1.0 | 02/09/2025 | Creación inicial del caso | Karina Hanmse |
+| 1.1 | 04/09/2025 | Ejecución del caso | Karina Hanmse |
+
 
 ---
-**Última actualización:** 02/09/2025
+**Última actualización:** 04/09/2025
 **Revisado por:** [Karina Hanmse]

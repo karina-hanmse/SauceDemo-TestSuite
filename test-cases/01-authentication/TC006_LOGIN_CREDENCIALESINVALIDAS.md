@@ -64,14 +64,25 @@ Verificar que el sistema no permita el acceso cuando se ingresan credenciales in
 
 ## 📊 Resultado de Ejecución
 - **Ejecutado por:** [Karina Hanmse]
-- **Fecha:** [02/09/2025]
+- **Fecha:** 04/09/2025
 - **Navegador:** Chrome 118.0.5993.88
 - **SO:** Windows 11 Home
-- **Estado:** ⏳ Pendiente
-- **Tiempo de ejecución:** [X segundos]
+- **Estado:** ✅ PASS
+- **Tiempo de ejecución:** [2.0 segundos]
 
 ## 📝 Observaciones
-[Completar después de la ejecución]
+ - Login no fue ejecutado.
+ - Mensaje error luego de clickear Login.
+ - Mensaje de error no se lee completo.
+ - Una vez aceptado el error, los cambios no se limpian.
+ - No se observaron errores en consola del navegador.
+ - Funcionalidad opera según lo esperado.
+
+## 🔍 Evidencia de Prueba
+- **Screenshot inicial:** `evidence/screenshots/TC002_step1_login_page_28082025.png`
+- **Screenshot credenciales:** `evidence/screenshots/TC006_step1_credencialinvalidas_04092025.png`
+- **Screenshot error:** `evidence/screenshots/TC006_step2_error_message_04092025.png`
+- **Video ejecución completa:** `evidence/videos/TC005_credencialinvalida.wmv`
 
 ## 🔗 Trazabilidad y Referencias
 - **Requisito funcional:** REQ-AUTH-004 (Validación de credenciales)
@@ -89,23 +100,24 @@ Verificar que el sistema no permita el acceso cuando se ingresan credenciales in
 ## 📈 Métricas y KPIs
 | Métrica               | Valor Objetivo  | Valor Obtenido  | Estado    |
 |---------              |---------------  |---------------- |--------   |
-| Tiempo de validación  | < 3 segundos    | [X segundos]    | ⏳ Pendiente   |
-| Acceso bloqueado      | 100%            | [X%]            | ⏳ Pendiente   |
-| Mensaje apropiado     | Sí              | [Sí/No]         | ⏳ Pendiente   |
-| Sin información sensible | Sí           | [Sí/No]         | ⏳ Pendiente   |
+| Tiempo de validación  | < 3 segundos    | 2.0 segundos    | ✅ Pass   |
+| Acceso bloqueado      | 100%            | 100%            | ✅ Pass  |
+| Mensaje apropiado     | Sí              | Sí              | ✅ Pass   |
+| Sin información sensible | Sí           | Sí              | ✅ Pass   |
 
 ## 🛡️ Validaciones de Seguridad
-- ⏳ No hay acceso indebido con credenciales incorrectas
-- ⏳ Mensaje de error genérico sin revelar información específica
-- ⏳ No hay enumeración de usuarios válidos/inválidos posible
-- ⏳ Comportamiento consistente independiente del browser
-- ⏳ Tiempos de respuesta no revelan información por diferencias temporales
+- ✅ No hay acceso indebido con credenciales incorrectas
+- ✅ Mensaje de error genérico sin revelar información específica
+- ✅ No hay enumeración de usuarios válidos/inválidos posible
+- ✅ Comportamiento consistente independiente del browser
+- ✅ Tiempos de respuesta no revelan información por diferencias temporales
 
 ## 📋 Historial de Cambios
 | Versión | Fecha | Cambio Realizado | Responsable |
 |---------|--------|------------------|-------------|
 | 1.0 | 02/09/2025 | Creación inicial del caso | Karina Hanmse |
+| 1.1 | 02/09/2025 | Ejecución del caso | Karina Hanmse |
 
 ---
-**Última actualización:** 02/09/2025
+**Última actualización:** 04/09/2025
 **Revisado por:** [Karina Hanmse]
