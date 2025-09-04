@@ -67,14 +67,15 @@ Verificar que el sistema no permita el acceso cuando se ingresan credenciales in
 - **Fecha:** 04/09/2025
 - **Navegador:** Chrome 118.0.5993.88
 - **SO:** Windows 11 Home
-- **Estado:** ✅ PASS
+- **Estado:** ❌ FAIL
+- **Reporte Bug:** BUG_REPORT_TC006
 - **Tiempo de ejecución:** [2.0 segundos]
 
 ## 📝 Observaciones
  - Login no fue ejecutado.
  - Mensaje error luego de clickear Login.
  - Mensaje de error no se lee completo.
- - Una vez aceptado el error, los cambios no se limpian.
+ - Una vez aceptado el error, los campos no se limpian.
  - No se observaron errores en consola del navegador.
  - Funcionalidad opera según lo esperado.
 
