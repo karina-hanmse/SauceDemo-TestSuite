@@ -57,7 +57,7 @@ Cuando se ingresan credenciales incorrectas y se muestra el mensaje de error, lo
 - **Fecha de detección:** 02/09/2025
 
 ## 📸 Evidencia
-- **Screenshot:** BUG001_campos_no_limpios.png
+- **Screenshot:** bug-reports/evidence/screenshots/BUG001_campos_no_limpios.png
 - **Video Evidencia:** bug-reports/evidence/videos/BUG001_campos_no_limpios.wmv
 - **Caso de prueba:** TC006-LOGIN_CREDENCIALESINVALIDAS.md
 
