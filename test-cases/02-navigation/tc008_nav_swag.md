@@ -74,7 +74,7 @@ Verificar que al hacer clic en el logo "Swag Labs" de la cabecera, el usuario es
 - El logo No es clickleable, es texto plano.
 - Sería importante fuera un texto cursor pointer.
 - **BUG DETECTADO:** Ver BUG-002-NAV
-
+## 🔍 Evidencia de Prueba
 - **Screenshot inicial:** `evidence/screenshots/TC002_step1_login_page_28082025.png`
 - **Screenshot Logo Visible:** "evidence\screenshots\TC008-NAV- SAWG-STEPS2-logovisible09092025.png"
 - **Screenshot error:** "evidence\screenshots\TC008-NAV- SAWG-STEPS309092025.png"
