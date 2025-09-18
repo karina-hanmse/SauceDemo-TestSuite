@@ -1,117 +1,148 @@
-# 🧪 Suite de Pruebas SauceDemo
-> **🚧 Portfolio en Desarrollo Activo** | Portafolio completo de pruebas que muestra la evolución de las habilidades de QA desde un nivel básico hasta uno competente.
+# SauceDemo Test Suite - Manual Testing Portfolio
 
-## 🎯 Resumen del Proyecto
-Este repositorio documenta mi trayectoria en QA Testing y crecimiento profesional a través de casos de prueba mejorados para [SauceDemo](https://www.saucedemo.com/). Cada semana incorporo nuevas técnicas, herramientas y metodologías que reflejan mi evolución continua en Quality Assurance.
+## Descripción del Proyecto
 
-### 📈 Trayectoria Evolutiva
-- **Semana 1:** Pruebas funcionales básicas y estructura inicial
-- **Semana 2:** **ACTUAL** → Análisis técnico profundo (console logs, network requests)
-- **Semana 3:** Pruebas basadas en métricas con evidencia completa
-- **Semana 4:** Pensamiento estratégico y propuestas de automatización
+Este repositorio contiene una suite completa de casos de prueba manuales desarrollada para demostrar habilidades de QA Testing en un entorno de e-commerce real. Se utilizó SauceDemo como aplicación bajo prueba para ejecutar testing funcional exhaustivo.
 
-## 📊 Estado Actual del Portfolio
+## Objetivos Cumplidos
 
-### ✅ **Completado**
-- **🔐 Módulo de Autenticación** (2/5 casos implementados)
-  - TC002: Usuario Bloqueado - **Con análisis técnico completo**
-  - Documentación profesional con evidencias exhaustivas
-  - Análisis de console logs y network requests
-- **Estructura Organizacional** - Carpetas profesionales y trazabilidad completa
-- **Metodología Establecida** - Proceso sistemático documentado
+- **Demostrar metodología estructurada** de testing manual
+- **Documentar casos de prueba** siguiendo estándares de la industria
+- **Identificar y reportar defectos reales** en aplicación web
+- **Generar evidencia completa** de ejecución de pruebas
+- **Aplicar diferentes técnicas** de testing (positivo, negativo, casos límite)
 
-### 🔄 **En Progreso**
-- **🔐 Autenticación** - Completando casos restantes (3/5)
-- **🧭 Navegación** - Menú, rutas de navegación, enrutamiento de páginas
-- **📦 Inventario** - Listado de productos, filtrado, ordenación
-
-### 📋 **Próximos Módulos**
-- **🛒 Carrito de Compras** - Añadir/Eliminar artículos, cálculos
-- **💳 Finalización de Compras** - Flujo de pago, validación de formulario
-- **🤖 Automatización** - Introducción a Selenium WebDriver
-
-## 🗂️ Estructura del Portfolio
+## Estructura del Proyecto
 
 ```
-├── test-cases/           # Casos de prueba documentados
-│   └── 01-authentication/    # Módulo de login y usuarios
-├── evidence/            # Evidencias de ejecución
-│   ├── screenshots/     # Capturas de pantalla paso a paso
-│   ├── videos/         # Videos de ejecución completa
-│   └── docs/           # Análisis técnicos detallados
-├── test-plans/         # Planes de prueba (próximamente)
-├── bug-reports/        # Informes de defectos
-└── reports/           # Métricas y resúmenes ejecutivos
+SauceDemo-TestSuite/
+├── casos de prueba/          # Test cases por área funcional
+├── documentos/               # Documentación del proyecto  
+├── evidencia/               # Screenshots y videos de ejecución
+├── informes/                # Reportes y análisis
+├── informes de errores/     # Bug reports documentados
+├── LÉAME.md                 # Documentación principal
+└── registro de cambios.md   # Historial de modificaciones
 ```
 
-## 🚀 Navegación Rápida
+## Resumen de Casos de Prueba
 
-### 📋 **Casos de Prueba Destacados**
-- [**TC002 - Usuario Bloqueado**](./test-cases/01-authentication/TC002-LOGIN-Usuario_Bloqueado.md) 
-  - ⭐ **Caso estrella** con análisis técnico completo
-  - Console logs capturados y analizados
-  - Network requests documentados
-  - Validación de requisitos de seguridad (REQ-AUTH-002)
+### Cobertura Funcional
+- **15 casos de prueba ejecutados**
+- **4 áreas funcionales cubiertas**
+- **8 casos exitosos (PASS)**
+- **7 casos con defectos encontrados (FAIL)**
 
-### 🐛 **Informes de Defectos**
-- [BUG-001: Problema de validación de inicio de sesión](./evidence/bug-reports/) 
-- Análisis de impacto y severidad incluidos
+| Área | Casos Totales | PASS | FAIL |
+|------|---------------|------|------|
+| Autenticación | 4 | 3 | 1 |
+| Navegación | 3 | 1 | 2 |
+| Carrito | 3 | 2 | 1 |
+| Checkout | 5 | 2 | 3 |
 
-### 📈 **Métricas Actuales**
-- **Casos de Prueba Ejecutados:** 2/5 del módulo autenticación
-- **Tasa de Éxito:** 100% de ejecución documentada
-- **Defectos Encontrados:** 1 (BUG-001)
-- **Cobertura de Evidencias:** Completa (screenshots + videos + logs técnicos)
+## Defectos Identificados
 
-## 🛠️ Herramientas y Habilidades Demostradas
+### 6 Bugs Reales Encontrados y Documentados
 
-### **Testing Manual Avanzado**
-- ✅ Diseño y ejecución sistemática de casos de prueba
-- ✅ **Análisis técnico profundo** (Console logs, Network monitoring)
-- ✅ Documentación exhaustiva con evidencias múltiples
-- ✅ Trazabilidad completa requisitos → casos → evidencias
-- ✅ Testing cross-browser y debugging
+| Bug ID | Área | Severidad | Descripción |
+|--------|------|-----------|-------------|
+| BUG-001 | Autenticación | Media | Campos no se limpian tras error |
+| BUG-002 | Navegación | Media | Logo no es clickeable |
+| BUG-003 | Navegación | Menor | Menú se superpone con contenido |
+| BUG-004 | Carrito | Media | Descripción de producto incorrecta |
+| BUG-005 | Checkout | Media | Datos no aparecen en resumen |
+| BUG-006 | Checkout | Alta | Sistema acepta datos inválidos |
 
-### **Habilidades Técnicas**
-- ✅ **Chrome DevTools** - Console, Network, debugging
-- ✅ **Control de versiones** Git y flujos de trabajo GitHub
-- ✅ **Documentación técnica** Markdown profesional
-- ✅ **Captura de evidencias** Screenshots, videos, HAR files
-- ✅ **Análisis de logs** Interpretación de errores y warnings
+## Casos de Prueba Destacados
 
-### **Proceso y Metodología**
-- ✅ Planificación estratégica de pruebas
-- ✅ **Metodología estructurada** y escalable
-- ✅ Seguimiento de métricas y KPI
-- ✅ **Mejora continua** documentada semanalmente
+### TC006-LOGIN - Credenciales Incorrectas
+- **Defecto encontrado**: Los campos no se limpian automáticamente
+- **Impacto**: Experiencia de usuario y posible riesgo de seguridad menor
 
-## 🎓 Evolución del Aprendizaje
+### TC015-CHECKOUT - Validación de Formato
+- **Defecto crítico**: Sistema acepta números en nombres y caracteres especiales
+- **Impacto**: Alto - Compromete integridad de datos
 
-Este portfolio demuestra **crecimiento auténtico y medible**:
+### TC012-CART - Contador Múltiple
+- **Caso complejo**: Validación de sincronización entre páginas
+- **Resultado**: Funcionalidad robusta confirmada
 
-- **TC001:** Comenzé con ejecución básica de pruebas
-- **TC002:** **ACTUAL** → Incorporé análisis técnico profundo (console logs, network analysis)
-- **TC003+:** Próximamente → Métricas avanzadas y preparación para automatización
+## Metodología Aplicada
 
-> 💡 **Cada commit cuenta la historia** del desarrollo profesional y aprendizaje basado en experiencia real.
+### Técnicas de Testing
+- **Testing Funcional**: Verificación de requisitos de negocio
+- **Testing Negativo**: Validación de manejo de errores
+- **Testing de Usabilidad**: Experiencia de usuario
+- **Testing de Compatibilidad**: Navegadores y sistemas operativos
 
-## 🔄 Cronograma de Actualizaciones
-- **📅 Frecuencia:** Actualizaciones semanales (Lunes)
-- **🎯 Próxima entrega:** Completar módulo de autenticación (5/5 casos)
-- **📈 Roadmap:** Transición gradual hacia automatización en Semana 4
+### Documentación Estructurada
+- Casos de prueba con formato estándar
+- Precondiciones claramente definidas
+- Pasos de ejecución detallados
+- Criterios de aceptación específicos
+- Evidencia completa de ejecución
 
-## 📞 Contacto y Colaboración
+### Gestión de Defectos
+- Reportes de bugs con clasificación de severidad
+- Pasos claros para reproducción
+- Impacto en negocio y usuario final
+- Sugerencias de solución
 
-**Karina Hanmse** - QA Tester en Formación  
-🔍 Especializada en testing manual, documentación técnica y análisis detallado
+## Herramientas Utilizadas
 
-- 📧 karinahanmse@gmail.com  
-- 💼 [www.linkedin.com/in/karinahanmse]  
-- 🌐 Córdoba, Argentina  
+- **Navegador**: Chrome 118+
+- **SO**: Windows 11 Home
+- **Documentación**: Markdown
+- **Control de versiones**: Git/GitHub
+- **Captura de evidencia**: Screenshots y videos
+- **Aplicación bajo prueba**: https://www.saucedemo.com
+
+## Habilidades Demostradas
+
+### Technical Skills
+- Diseño y ejecución de casos de prueba
+- Identificación y reporte de defectos
+- Documentación técnica estructurada
+- Análisis de requisitos funcionales
+- Testing de diferentes tipos (positivo/negativo)
+
+### Soft Skills
+- Atención al detalle
+- Pensamiento crítico
+- Comunicación técnica clara
+- Organización y metodología
+- Orientación a calidad
+
+## Métricas del Proyecto
+
+- **Tiempo total**: 3 semanas
+- **Casos ejecutados**: 15
+- **Defectos encontrados**: 6
+- **Tasa de detección de defectos**: 40%
+- **Cobertura funcional**: 4 áreas principales
+- **Evidencia generada**: 50+ screenshots, 15+ videos
+
+## Próximos Pasos
+
+### Expansión del Portfolio
+- API Testing con Postman
+- Testing automatizado (Selenium)
+- Testing de performance
+- Mobile testing
+
+### Mejoras Identificadas
+- Implementación de testing de regresión
+- Casos de prueba para diferentes navegadores
+- Testing de accesibilidad
+- Validaciones de seguridad más profundas
+
+## Contacto
+
+**Karina Hanmse**
+- LinkedIn: www.linkedin.com/in/karinahanmse
+- GitHub: https://github.com/karina-hanmse
+- Email: karinahanmse@gmail.com
 
 ---
 
-⭐ **¡Marca este repositorio con una estrella si te resulta útil para aprender las mejores prácticas de QA Testing!**
-
-📅 **Última actualización:** 31 de agosto de 2025    
-🔄 **Próxima actualización:** 1 de septiembre de 2025
+*Este portfolio demuestra competencias reales en testing manual y capacidad para identificar defectos críticos en aplicaciones web. Desarrollado como proyecto práctico para mostrar habilidades de QA Testing.*
